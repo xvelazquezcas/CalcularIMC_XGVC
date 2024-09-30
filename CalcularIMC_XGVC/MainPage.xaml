@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcularIMC_XGVC.MainPage">
+
+    <StackLayout Padding="20" BackgroundColor="Black">
+        <Frame BackgroundColor="Purple" Padding="24" CornerRadius="100" HasShadow="True">
+            <Label Text="CalcularIMC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Altura(m)" HorizontalTextAlignment="Start" TextColor="Purple" FontSize="15"/>
+        <Entry Placeholder="Altura" x:Name="Altura" Keyboard="Numeric" Margin="10,10,10,10" PlaceholderColor="Purple" HorizontalTextAlignment="Start" TextColor="White"/>
+
+        <Label Text="Peso(kg)" HorizontalTextAlignment="Start" TextColor="Purple" FontSize="15"/>
+        <Entry Placeholder="Peso" x:Name="Peso" Keyboard="Numeric" Margin="10,10,10,10" PlaceholderColor="Purple" HorizontalTextAlignment="Start" TextColor="White"/>
+       
+        <Entry Placeholder="IMC" x:Name="IMC" IsEnabled="False" Margin="0,20,0,0" Keyboard="Numeric" PlaceholderColor="Purple" HorizontalTextAlignment="Start" TextColor="White"/>
+        <Button Text="Calcular IMC" Clicked="Button_Clicked" Margin="0,20,0,0" TextColor="Purple" HorizontalOptions="Center" BorderColor="Purple" />
+    </StackLayout>
+
+</ContentPage>
+
